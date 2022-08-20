@@ -1,0 +1,78 @@
+:root{
+    --light-color: #f8e1f8;
+    --medium-color: #97c93e;
+    --dark-color: #121F3D;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom, #f8e1f8, #efb8ef, #e58de5, #da5dda, #cd06cd);
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(10, 1fr) 10px / repeat(10, 1fr);
+    justify-content: stretch;
+    grid-template-areas: 
+    "item-a item-a item-a item-a item-a item-a item-a item-a item-a item-a"
+    "item-a item-a item-a item-a item-a item-a item-a item-a item-a item-a"
+    "item-b item-b item-c item-c item-c item-c item-c item-c item-c item-c"
+    "item-b item-b item-c item-c item-c item-c item-c item-c item-c item-c"
+    "item-d item-d item-c item-c item-c item-c item-c item-c item-c item-c"
+    "item-d item-d item-c item-c item-c item-c item-c item-c item-c item-c"
+    "item-e item-e item-g item-g item-g item-g item-g item-g item-g item-g"
+    "item-e item-e item-i item-i item-i item-i item-i item-i item-i item-i"
+    "item-h item-h item-h item-h item-h item-h item-h item-h item-h item-h"
+    "item-h item-h item-h item-h item-h item-h item-h item-h item-h item-h"
+    "item-f item-f item-f item-f item-f item-f item-f item-f item-f item-f";
+    gap: 5px;
+    
+}
+.item-a{
+    grid-area: item-a;
+    background-color: var(--medium-color);
+}
+.item-b{
+    grid-area: item-b;
+    background-color: var(--light-color);
+
+}
+.item-c{
+    grid-area: item-c;
+    background-color: yellow;
+}
+.item-i{
+    grid-area: item-i;
+    background-color: yellow;
+}
+.item-d{
+    grid-area: item-d;
+    background-color: rgb(97, 57, 163);
+
+}
+.item-e{
+    grid-area: item-e;
+    background-color: rgb(36, 149, 169);
+
+}
+.item-f{
+    grid-area: item-f;
+    background-color: #101010;
+}
+.item-g{
+ grid-area: item-g;
+    background-color: rgb(173, 20, 220);
+
+}
+.item-h{
+    grid-area: item-h;
+    background-color: rgb(237, 143, 150);
+
+}
+
+
